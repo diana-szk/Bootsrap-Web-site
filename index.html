@@ -26,6 +26,13 @@
   <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
 
+  <!-- Responsive tabs CSS -->
+
+
+  <!-- <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/css/responsive-tabs.css">
+
+
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
@@ -37,36 +44,81 @@
 <body data-spy="scroll" data-target="#navbarResponsive">
 
   <!--Home Section-->
-  <div id="home">
+  <!-- <div id="home"> -->
 
-    <!--Navigation-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html"><img src="images/logo1.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <section id="home">
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <!--Background Video -->
+    <video id="home-video" poster="video/solo.jpg" autoplay muted loop>
+      <source src="video/video-bg.mp4" type="video/mp4">
+      <source src="video/video-bg.ogg" type="video/ogg">
+      <source src="video/video-bg.webm" type="video/webm">
+    </video>
+
+    <!-- Overlay -->
+    <div id="home-overlay"></div>
+
+    <!-- Home Content -->
+    <div id="home-content">
+
+      <div id="home-content-inner" class="text-center">
+
+        <div id="home-heading">
+          <h1 id="home-heading-1">Living</h1><br>
+          <h1 id="home-heading-2"><span>Archi-Esthetic </span></h1>
+        </div>
+
+        <div id="home-text">
+          <p>As an architect you design for the present, with an awareness of the past, for a future which is
+            essentially unknown.</p>
+        </div>
+
+        <div id="home-btn">
+          <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+        </div>
+
       </div>
-    </nav>
+    </div>
 
-    <!-- Image Slider -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  </section>
+
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="images/logo1.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feature">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Image Slider -->
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -106,7 +158,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
+  </div> -->
 
   <!-- About Section-->
 
@@ -154,7 +206,7 @@
     </div>
   </section>
 
-  <div class="about-features">
+  <div class="about-features" id="feature">
 
     <div class="content-box-md">
       <div class="container">
@@ -201,7 +253,7 @@
 
   <!-- TEAM SECTION -->
 
-  <section class="team">
+  <section class="team" id="team">
 
     <div class="content-box-lg">
       <div class="container">
@@ -228,7 +280,41 @@
             <div class="team-members owl-carousel owl-theme">
 
               <!-- Member 1 -->
+              <div class="team-member">
+                <img src="images/team3.jpg" alt="Team 3" class="img-responsive">
+                <div class="team-member-overlay">
+                  <div class="team-member-info text-center">
+                    <h6>Maya Derek</h6>
+                    <p class="paragraph">Planner</p>
+                    <ul class="social-list">
+                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
+
+              <!-- Member 2 -->
+
+              <div class="team-member">
+                <img src="images/team4.jpg" alt="Team 4" class="img-responsive">
+                <div class="team-member-overlay">
+                  <div class="team-member-info text-center">
+                    <h6>Sebastian Fritz</h6>
+                    <p class="paragraph">Draftsman</p>
+                    <ul class="social-list">
+                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Member 3 -->
               <div class="team-member">
                 <img src="images/team1.jpg" alt="Team 1" class="img-responsive">
                 <div class="team-member-overlay">
@@ -244,7 +330,7 @@
                 </div>
               </div>
 
-              <!-- Member 2 -->
+              <!-- Member 4 -->
 
               <div class="team-member">
                 <img src="images/team2.jpg" alt="Team 2" class="img-responsive">
@@ -261,40 +347,10 @@
                 </div>
               </div>
 
-              <!-- Member 3 -->
-              <div class="team-member">
-                <img src="images/team3.jpg" alt="Team 3" class="img-responsive">
-                <div class="team-member-overlay">
-                  <div class="team-member-info text-center">
-                    <h6>Cindy Ross</h6>
-                    <p class="paragraph">Planner</p>
-                    <ul class="social-list">
-                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Member 4 -->
 
-              <div class="team-member">
-                <img src="images/team4.jpg" alt="Team 4" class="img-responsive">
-                <div class="team-member-overlay">
-                  <div class="team-member-info text-center">
-                    <h6>Sebastian Fritz</h6>
-                    <p class="paragraph">Draftsman</p>
-                    <ul class="social-list">
-                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
               <!-- Member 5 -->
-
+              <!-- 
               <div class="team-member">
                 <img src="images/team5.jpg" alt="Team 4" class="img-responsive">
                 <div class="team-member-overlay">
@@ -308,11 +364,11 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- Member 6 -->
 
-              <div class="team-member">
+              <!-- <div class="team-member">
                 <img src="images/team6.jpg" alt="Team 6" class="img-responsive">
                 <div class="team-member-overlay">
                   <div class="team-member-info text-center">
@@ -325,8 +381,88 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
+            </div>
+          </div>
+        </div>
+
+        <!-- TEAM SKILLS SECTION -->
+
+        <div class="progress-elements">
+          <div class="row">
+
+            <!-- SKILL 1 -->
+            <div class="col-md-6">
+              <div class="skill">
+                <h4>Design</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 95%;">
+                    <span>95%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SKILL 2 -->
+            <div class="col-md-6">
+              <div class="skill">
+                <h4>Construction</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 90%;">
+                    <span>90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SKILL 3 -->
+            <div class="col-md-6">
+              <div class="skill">
+                <h4>Analytical thinking</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 85%;">
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SKILL 4 -->
+            <div class="col-md-6">
+              <div class="skill">
+                <h4>Legal knowledge</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                    style="width: 95%;">
+                    <span>95%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="statement">
+
+    <div class="content-box-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="architecture-statement text-center">
+              <h3>
+                <i class="fas fa-quote-left"></i> Architecture is the learned game, correct and magnificent, br of forms
+                assembled in the light.<i class="fas fa-quote-right"></i>
+                <p class="paragraph">-Le Corbusier-</p>
+              </h3>
             </div>
           </div>
         </div>
@@ -334,33 +470,721 @@
     </div>
   </section>
 
+  <section id="services">
 
-  
+    <div id="services-01">
+      <div class="content-box-lg">
+        <div class="container">
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="horizontal-heading">
+                <h5>What We Do</h5>
+                <h2>Our Services</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <img src="images/strategy-3.jpg" alt="Services Photo" class="img-responsive">
+            </div>
+            <div class="col-md-5">
+
+              <!-- Service 1 -->
+              <div class="service">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="icon text-right">
+                      <i class="fas fa-ruler"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h5>Service 01</h5>
+                    <h4>Construction</h4>
+                    <p class="paragraph">We offer clients a full range of architectural design services, from concept
+                      through construction. Our firm includes experts in sustainable design, code compliance</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 2 -->
+              <div class="service">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="icon text-right">
+                      <i class="fas fa-paint-roller"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h5>Service 02</h5>
+                    <h4>Interiors</h4>
+                    <p class="paragraph">Along with the exterior aesthetic our buildings create, we strive to create
+                      interior architecture that adds value to the building and experience within each space.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 3 -->
+              <div class="service">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="icon text-right">
+                      <i class="fas fa-drafting-compass"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <h5>Service 03</h5>
+                    <h4>Sustainbility</h4>
+                    <p class="paragraph"> Archi-esthetic advocates that good design, construction and sustainability go
+                      hand-in-hand. </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="services-02">
+      <div class="content-box-md">
+        <div id="services-tabs">
+          <ul class="text-center">
+            <li><a href="#service-tab-1">Design</a></li>
+            <li><a href="#service-tab-2">Development</a></li>
+            <li><a href="#service-tab-3">Creativity</a></li>
+            <li><a href="#service-tab-4">Strategy</a></li>
+          </ul>
+
+          <div id="service-tab-1" class="service-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/strategy-1.jpg" alt="strategy" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                  <div class="tab-bg">
+                    <h2>01</h2>
+                    <h3>Design to play it safe</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam soluta
+                      harum deserunt placeat sint error blanditiis! Corrupti sapiente asperiores expedita, itaque facere
+                      voluptas velit accusantium reprehenderit id distinctio molestiae?</p>
+                    <div id="services-02-btn">
+                      <a class="btn btn-general btn-yellow" href="#services" title="Get in touch" role="button">Get in
+                        touch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="service-tab-2" class="service-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/about2.jpg" alt="strategy" class="img-responsive img-2">
+                </div>
+                <div class="col-md-6">
+                  <div class="tab-bg">
+                    <h2>02</h2>
+                    <h3>From our development to yours</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam soluta
+                      harum deserunt placeat sint error blanditiis! Corrupti sapiente asperiores expedita, itaque facere
+                      voluptas velit accusantium reprehenderit id distinctio molestiae?</p>
+                    <div id="services-02-btn">
+                      <a class="btn btn-general btn-yellow" href="#services" title="Get in touch" role="button">Get in
+                        touch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="service-tab-3" class="service-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/strategy-4.jpg" alt="strategy" class="img-responsive img-3">
+                </div>
+                <div class="col-md-6">
+                  <div class="tab-bg">
+                    <h2>03</h2>
+                    <h3>Get more from life with creativity</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam soluta
+                      harum deserunt placeat sint error blanditiis! Corrupti sapiente asperiores expedita, itaque facere
+                      voluptas velit accusantium reprehenderit id distinctio molestiae?</p>
+                    <div id="services-02-btn">
+                      <a class="btn btn-general btn-yellow" href="#services" title="Get in touch" role="button">Get in
+                        touch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="service-tab-4" class="service-tab">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/strategy-2.png" alt="strategy">
+                </div>
+                <div class="col-md-6">
+                  <div class="tab-bg">
+                    <h2>04</h2>
+                    <h3>The home of strategy</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam soluta
+                      harum deserunt placeat sint error blanditiis! Corrupti sapiente asperiores expedita, itaque facere
+                      voluptas velit accusantium reprehenderit id distinctio molestiae?</p>
+                    <div id="services-02-btn">
+                      <a class="btn btn-general btn-yellow" href="#services" title="Get in touch" role="button">Get in
+                        touch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Portofolio -->
+
+  <section class="portofolio" id="work">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="vertical-heading">
+            <h5>Find Out Work</h5>
+            <h2>Our <br> <span>Amazing</span> Work</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <ul>
+          <li class="button active" data-filter="filter">All</li>
+          <li class="button active" data-filter="Interior">Interior</li>
+          <li class="button active" data-filter="Exterior">Exterior</li>
+        </ul>
+      </div>
+
+      <div class="row row-1 no-gutters text-center">
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/work7.jpg" alt="project 1" class="img-fluid filter Interior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <a href="images/project6.jpg"> <img src="images/project6.jpg"" alt=" project 1"
+                class="img-fluid filter Interior"></a>
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/work7.png" alt="project 1" class="img-fluid filter Exterior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/front-img6.jpg" alt="project 1" class="img-fluid filter Interior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/front-img4.jpg" alt="project 1" class="img-fluid filter Exterior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/work5.jpg" alt="project 1" class="img-fluid filter Interior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/project8.jpg" alt="project 1" class="img-fluid filter Interior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Logo</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <img src="images/work6.jpg" alt="project 1" class="img-fluid filter Interior">
+          </div>
+          <div class="item-overlay pt-3">
+            <!-- <h3>Exterior Design</h3>
+            <span></span>
+            <p>Desktop</p> -->
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+
+          <div class="vertical-heading">
+            <h5>Who we are</h5>
+            <h2>What Our <br> <span> Customers</span> Say</h2>
+          </div>
+
+        </div>
+
+        <div class="col-md-8">
+          <div id="testimonial-slider" class="owl-carousel owl-theme">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Best planning ever</h3>
+                </div>
+                <div class="col-md-6">
+                  <div class="stars text-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At mollitia fugit ut
+                dolorum maxime sequi beatae assumenda illo laboriosam! Veniam consectetur architecto necessitatibus
+                reprehenderit quisquam consequatur rerum asperiores dolorum vitae.</p>
+
+              <div class="author">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="images/customer1.png" alt="client" img="img-responsive">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="author-name-des">
+                      <p class="paragraph p1"> <strong>Tom Keen</strong></p>
+                      <p class="paragraph">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <h3> Modern and good looking design</h3>
+                </div>
+                <div class="col-md-6">
+                  <div class="stars text-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At mollitia fugit ut
+                dolorum maxime sequi beatae assumenda illo laboriosam! Veniam consectetur architecto necessitatibus
+                reprehenderit quisquam consequatur rerum asperiores dolorum vitae.</p>
+
+              <div class="author">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="images/customer2.png" alt="client" img="img-responsive">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="author-name-des">
+                      <p class="paragraph p1">Leila Johnson</p>
+                      <p class="paragraph">Interior Designer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Affordable budget</h3>
+                </div>
+                <div class="col-md-6">
+                  <div class="stars text-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At mollitia fugit ut
+                dolorum maxime sequi beatae assumenda illo laboriosam! Veniam consectetur architecto necessitatibus
+                reprehenderit quisquam consequatur rerum asperiores dolorum vitae.</p>
+
+              <div class="author">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="images/customer3.png" alt="client" img="img-responsive">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="author-name-des">
+                      <p class="paragraph p1">Megan Liz</p>
+                      <p class="paragraph">Architect</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+
+  <section id="stats">
+    <div class="content-box-md">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vertical-heading">
+              <h5>Fun Facts</h5>
+              <h2>We deliever <br> <span>Excellent</span> Services</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3">
+
+            <!-- ITEM 1 -->
+            <div class="stats-item text-center">
+              <i class="far fa-chart-bar"></i>
+              <h3 class="counter">15</h3>
+              <p class="paragraph">Years Experience</p>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <!-- ITEM 2 -->
+            <div class="stats-item text-center">
+              <i class="fab fa-codepen"></i>
+              <h3 class="counter">200</h3>
+              <p class="paragraph">Projects Done</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- ITEM 3 -->
+            <div class="stats-item text-center">
+              <i class="fas fa-trophy"></i>
+              <h3 class="counter">10</h3>
+              <p class="paragraph">Award Rechieved</p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- ITEM 4 -->
+            <div class="stats-item text-center">
+              <i class="fas fa-user-friends"></i>
+              <h3 class="counter">300</h3>
+              <p class="paragraph">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+
+  <section id="clients">
+    <div class="content-box-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <div class="horizontal-heading">
+              <h5>Satisfied Clients</h5>
+              <h2>Our Happy <span>Clients</span></h2>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div id="clients-list" class="owl-carousel owl-theme">
+              <!-- Client 1 -->
+              <div class="client">
+                <img src="images/logo2.jpg" alt="client 1" class="img-responsive">
+              </div>
+              <!-- Client 2 -->
+              <div class="client">
+                <img src="images/logo3.jpg" alt="client 2" class="img-responsive">
+              </div>
+              <!-- Client 3 -->
+              <div class="client">
+                <img src="images/logo-4.jpg" alt="client 3" class="img-responsive">
+              </div>
+              <!-- Client 4 -->
+              <div class="client">
+                <img src="images/logo-5.jpg" alt="client 4" class="img-responsive">
+              </div>
+              <!-- Client 5 -->
+              <div class="client">
+                <img src="images/logo-6.jpg" alt="client 5" class="img-responsive">
+              </div>
+              <!-- Client 6 -->
+              <div class="client">
+                <img src="images/logo-7.jpg" alt="client 6" class="img-responsive">
+              </div>
+              <!-- Client 7 -->
+              <div class="client">
+                <img src="images/logo-8.jpg" alt="client 7" class="img-responsive">
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div id="contact">
+    <div class="content-box-md">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="contact-left">
+
+              <div class="vertical-heading">
+                <h5>Who We Are</h5>
+                <h2>Get <br> In <span>Touch</span></h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, debitis voluptas saepe perspiciatis.
+              </p>
+              <div id="offices">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="office">
+                      <h4>United States</h4>
+                      <ul class="office-details">
+                        <li><i class="fas fa-mobile-alt text-center"></i>00 4356 7774</li>
+                        <li><i class="far fa-envelope text-center"></i>support@archiesthetic.com</li>
+                        <li><i class="fas fa-map-marker-alt text-center"></i> 48th Street, <br> Brooklyn, New York</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="office">
+                      <h4>United States</h4>
+                      <ul class="office-details">
+                        <li><i class="fas fa-mobile-alt text-center"></i>44 2098 7514</li>
+                        <li><i class="far fa-envelope text-center"></i>support@archiesthetic.com</li>
+                        <li><i class="fas fa-map-marker-alt text-center"></i> 5th Avenue, <br> Manhattan, New York</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="social-list">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div id="contact-right">
+              <form action="#">
+                <h4>Send Message</h4>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam est
+                  officia impedit quidem modi.</p>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Email Adress">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Mesaage"></textarea>
+                </div>
+
+                <div id="submit-button">
+                  <a href="#" class="btn btn-general btn-blue" title="Text" role="button">Submit</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="paragraph">
+            Copyright &copy; 2020 All rights reserved <br> by <span> Archi-Esthetic</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>  
+    crossorigin="anonymous"></script>
 
+  <!-- JQuery -->
+  <script src="js/jquery.js"></script>
 
-    <!-- JQuery -->
-    <script src="js/jquery.js"></script>
-  
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>  -->
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+  <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.min.js"></script> -->
+
+  <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-    <!-- Owl carousel JS -->
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
 
 
-   
+  <!--  Responsive Tabs JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/responsive-tabs@1.6.3/js/jquery.responsiveTabs.min.js"></script>
+
+  <!-- Owl carousel JS -->
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+  <!-- Isotope JS -->
+
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Custom JavaScript -->
+
+  <script src="js/script.js"></script>
+
 
 
 </body>
