@@ -136,21 +136,21 @@ body {
 
 #home{
   position: relative;
-  height: 120vh;
+  /* height: 120vh; */
 }
 
 #home-video{
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   z-index: -5;
   position: relative;
-  height: 122vh; 
+  /* max-height: 122vh;  */
 }
 
 #home-overlay {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 101%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -614,7 +614,7 @@ font-weight: 100;
 }
 
 .testimonial{
-padding: 2rem 4.5rem 0 4.5rem;
+padding: 2rem 4.5rem 0 4rem;
 color:#333;
 }
 
@@ -756,7 +756,7 @@ ul.office-details li{
 
 ul.office-details li i{
   font-size: 2rem;
-  width: 4.3rem;
+  width: 4rem;
 }
 
 #contact-left ul.social-list li a{
@@ -817,22 +817,4 @@ footer p{
 footer p span{
   color: var(--color-blue-light);
   font-weight: 500;
-}
-
-
-
-
-/* Responsive layout Home Section */
-@media screen and (max-width:1000px) {
-  .carousel-caption h2{
-    font-size: 1.9rem;
-  }
-
-@media screen and (max-width:600px) {
-  .carousel-caption h2 {
-    font-size: 1.9rem;
-  }
-
-}
-
 }

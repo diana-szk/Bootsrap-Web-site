@@ -1,0 +1,401 @@
+
+
+/* Large Devices and Desktop */
+
+@media only screen and (min-width: 1200px){
+    
+}
+
+/* Medium devices */
+
+@media  only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .vertical-heading h2{
+        font-size: 2.9rem;
+    }
+
+    /* SERVICE  */
+    #services-01 .content-box-lg{
+        padding-bottom: 4rem;
+      }
+
+      .service{
+        margin: 0;
+      }
+
+    /* Services 02 */
+    #services-tabs .tab-bg{
+        padding: 1.3rem 3rem;
+        min-height: 30rem;
+    }
+
+    .about-item i{
+        font-size: 3.2rem;
+        margin-bottom: .8rem;
+      }
+
+      /* CONTACT */
+
+      ul.office-details li{
+        font-size: 1.1rem;
+      }
+
+      ul.office-details li i{
+        font-size: 1.3rem;
+        width: 2rem;
+      }
+      
+}
+
+/* Small devices */
+
+@media  only screen and (min-width: 768px) and (max-width: 991px){
+
+    #home-heading h1 {
+        font-size: 4rem;
+      }     
+
+      #home-text p{
+          font-size: 1.3rem;
+      }
+
+      .btn-general{
+          padding: .8rem 3.5rem;
+          font-size: 1rem;
+      }
+
+      .vertical-heading h2{
+          font-size: 2.9rem;
+      }
+
+      /* ABOUT-FEATURES */
+
+      .about-item{
+        padding: 5rem 1rem;
+      }
+
+      .about-item i{
+        font-size: 3.6rem;
+        margin-bottom: .9rem;
+      }
+
+      /* STATEMENTS */
+
+      .architecture-statement h3{
+        font-size: 2.2rem;
+        line-height: 4rem;
+      }
+
+      /* Services */
+
+      #services-tabs .tab-bg{
+        padding: 1.3rem 3rem;
+        min-height: 20rem;
+    }
+
+        #services-01 .img-responsive{
+        width: 100%;
+        min-height: 99%;
+      }
+
+      #services-01 .content-box-lg{
+        padding-bottom: 5rem;
+      }
+
+      .service{
+        margin: .5rem 0 0 1rem;
+      }
+      
+      .service .icon{
+        font-size: 3.5rem;
+      }
+
+      .r-tabs-accordion-title{
+          text-align: center;
+          margin-bottom: 1rem;
+      }
+
+      .r-tabs-accordion-title a{
+        font-family: "Raleway", sans-serif;
+        font: 1.3rem;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+      .service-tab .img-2{
+        height: 100%;
+      }
+      .service-tab .img-3{
+        height: 100%;
+      }
+
+      /* contact */
+      ul.office-details li{
+        font-size: 1rem;
+      }
+
+      ul.office-details li i{
+        font-size: 1.2rem;
+        width: 2rem;
+      }
+
+      #contact-right form textarea{
+        min-height: 10rem;
+      }
+
+      #contact-right p{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+      }
+      
+      
+}
+
+/* Extra small devices */
+
+@media  only screen and (max-width: 767px){
+
+  /* home */
+     #home-heading h1 {
+        font-size: 2.5rem;
+      }  
+      
+      #home-heading{
+          padding: .7rem 0;
+          margin-top: 4rem;
+      }
+
+      #home-text p {
+       font-size: .8rem;
+       margin-top: .5rem;
+      }
+
+      .btn-general{
+          font-size: .8rem;
+          padding: .8rem 3rem;
+      }
+
+      .navbar-brand img {
+        height: 2.6rem;
+      }
+
+      /* about */
+      .vertical-heading h2,
+      .horizontal-heading h2{
+          font-size: 3.5rem;
+      }
+
+      .vertical-heading h5{
+        font-size: 1.2rem;
+        left: -5rem;
+      }
+
+     #about .content-box-lg{
+        padding: 7rem 1rem;
+      }
+      .about-left .vertical-heading{
+        margin-bottom: 4rem;
+      }
+
+      .btn-general{
+        padding: .4rem 3.5rem;
+        font-size: 1rem;
+    }
+    .about-bottom .img-responsive{
+      width: 80%;
+      height: auto;
+    }
+
+    /* about-features */
+
+    #feature .content-box-md{
+      padding: 7rem 2rem;
+    }
+
+    .about-item{
+      padding: 4rem 4rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .about-item i{
+      font-size: 3rem;
+      margin-bottom: .9rem;
+    }
+
+    /* team */
+
+    #team .content-box-lg{
+      padding: 5rem 2rem;
+    }
+
+    .team-left{
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+    .team-left .vertical-heading{
+      margin-bottom: 6rem;
+    }
+
+    /* services 01 */
+    #services-tabs .tab-bg{
+      padding: 1rem 2rem;
+      min-height: 10rem;
+  }
+
+      #services-01 .img-responsive{
+      width: 100%;
+      min-height: 100%;
+    }
+
+    #services-01 .content-box-lg{
+      padding-bottom: 5rem;
+    }
+
+    /* services 02 */
+    .service-tab .tab-bg{
+      margin-left: 0;
+    }
+    .service-tab .img-2{
+      height: 100%;
+    }
+    .service-tab .img-3{
+      height: 100%;
+    }
+
+    .btn-yellow{
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .r-tabs-accordion-title{
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+
+  .r-tabs-accordion-title a{
+    font-family: "Raleway", sans-serif;
+    font: 1.3rem;
+    color: #212226;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  /* work */
+
+  .portofolio .vertical-heading{
+    margin-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .control ul li{
+    padding: .5rem;
+    margin-left: 0;
+  }
+
+  /* Testimonials */
+
+  #testimonials{
+    margin-top: 3rem;
+  }
+
+  #testimonials .vertical-heading{
+    margin-bottom: 7rem;
+  }
+
+  #testimonials .owl-carousel .owl-item img{
+    width: 40%;
+  }
+
+  #testimonials img{
+    margin: 1rem auto;
+  }
+
+  #testimonials-slider .row{
+    text-align: center;
+  }
+
+  .testimonial .row {
+    margin-bottom: .5rem;
+}
+
+.testimonial .row .stars {
+  text-align: center !important;
+  margin-bottom: 2rem;
+ 
+}
+
+  #testimonials .row h3{
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .author .author-name-des{
+    width: 20rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+  /* Stats */
+  .stats-item h3{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: .5rem 0;
+  }
+
+  #stats .vertical-heading h5{
+    margin-left: 1.5rem;
+  }
+
+  .stats-item{
+    min-height: 14rem;
+    padding: 2rem 4rem;
+    transition: all .4s linear;
+  } 
+
+  /* Clients */
+
+  #clients .horizontal-heading{
+    margin-top: 4rem;
+  }
+
+  #clients .content-box-md{
+    padding: 2rem 0;
+  }
+
+  #clients-list{
+    padding-top: 2rem;
+  }
+
+  /* Nav */
+  .navbar-brand img {
+    height: 2rem;
+    margin: 0 auto;
+  }
+
+  /* Contact */
+   #contact-left .office{
+    text-align: center;
+  }
+
+  ul.office-details li{
+    justify-content: center;
+  }
+
+  ul.social-list{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+}
+  
+  
+
